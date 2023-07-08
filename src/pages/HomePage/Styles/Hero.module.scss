@@ -1,0 +1,15 @@
+@use "../../../assets/styles/" as *;
+
+.Hero {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  @include md() {
+    padding: 0 pixRem(72);
+  }
+  @include sm() {
+    row-gap: pixRem(12);
+    height: 100vh;
+  }
+}

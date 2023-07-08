@@ -1,0 +1,17 @@
+@use "../../../assets/styles/" as *;
+
+.SearchCategories {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 25vh 20vw;
+
+  @include md() {
+    padding: 0 pixRem(72);
+  }
+  @include sm() {
+    padding: 72px pixRem(18);
+    flex-direction: column;
+    row-gap: pixRem(100);
+  }
+}
