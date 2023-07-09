@@ -24,4 +24,4 @@ export const { openNavbar, closeNavbar } = mobileNavSlice.actions;
 export default mobileNavSlice.reducer;
 
 export const currentMobileNavState = (state: RootStateType) =>
-  state.mobileNavReducer.navIsOpen;
+  state.mobileNav.navIsOpen;

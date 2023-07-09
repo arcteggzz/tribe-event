@@ -47,14 +47,13 @@ export const { setCredentials, resetCredentials } = authSlice.actions;
 export default authSlice.reducer;
 
 export const selectCurrentUserName = (state: RootStateType) =>
-  state.authReducer.userName;
+  state.auth.userName;
 export const selectCurrentAccessToken = (state: RootStateType) =>
-  state.authReducer.accessToken;
+  state.auth.accessToken;
 export const selectCurrentUserImage = (state: RootStateType) =>
-  state.authReducer.userImage;
-export const selectCurrentUserId = (state: RootStateType) =>
-  state.authReducer.userId;
+  state.auth.userImage;
+export const selectCurrentUserId = (state: RootStateType) => state.auth.userId;
 export const selectCurrentUserEmail = (state: RootStateType) =>
-  state.authReducer.userEmail;
+  state.auth.userEmail;
 export const selectCurrentUserPhoneNumber = (state: RootStateType) =>
-  state.authReducer.userPhoneNumber;
+  state.auth.userPhoneNumber;

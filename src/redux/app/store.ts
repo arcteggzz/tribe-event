@@ -4,8 +4,8 @@ import mobileNavReducer from "../features/mobileNav/mobileNavSlice";
 
 const store = configureStore({
   reducer: {
-    authReducer,
-    mobileNavReducer,
+    auth: authReducer,
+    mobileNav: mobileNavReducer,
   },
   middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(),
   devTools: true,
