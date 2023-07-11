@@ -1,8 +1,23 @@
 import styles from "./PublicPageLayout.module.scss";
 import { Navbar, Footer } from "../../Components";
-import { Outlet } from "react-router-dom";
+import { Outlet, useLocation } from "react-router-dom";
+import { useEffect } from "react";
+import { useDispatch } from "react-redux";
+import { closeNavbar } from "../../redux/features/mobileNav/mobileNavSlice";
 
 const PublicPageLayout = () => {
+  const location = useLocation();
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(closeNavbar);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [location.hash]);
+
+  useEffect(() => {
+    dispatch(closeNavbar);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
   return (
     <>
       <div className={styles.PublicPageLayout}>
