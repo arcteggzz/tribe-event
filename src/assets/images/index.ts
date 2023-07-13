@@ -5,3 +5,6 @@ export { default as facebook_icon } from "./logos_facebook.png";
 export { default as instagram_icon } from "./skill-icons_instagram.png";
 export { default as twitter_icon } from "./skill-icons_twitter.png";
 export { default as hamburger_close_icon } from "./closeHamburger.png";
+export { default as facebook_transparent_icon } from "./facebook_icon.png";
+export { default as add_image_icon } from "./add_image.png";
+export { default as google_icon } from "./google_icon.png";
