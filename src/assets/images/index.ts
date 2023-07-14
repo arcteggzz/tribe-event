@@ -22,3 +22,6 @@ export { default as event_creation } from './event__creation.svg'
 export { default as attendee_registration } from './attendee_registration.svg'
 export { default as attendee_management } from './attendee_management.svg'
 export { default as event_promotion } from './event_promotion.svg'
+export { default as facebook_transparent_icon } from "./facebook_icon.png";
+export { default as add_image_icon } from "./add_image.png";
+export { default as google_icon } from "./google_icon.png";
